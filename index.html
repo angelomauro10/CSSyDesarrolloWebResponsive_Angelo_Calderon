@@ -2,25 +2,63 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="Final test to NEXT_U">
     <meta name="keywords" content="Test, Final, NEXT_U">
     <meta name="author" content="Angelo Mauro Diez">
     <meta name="copyright" content="Angelo Mauro Diez">
     <title>CSS Final Test</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+
   </head>
   <body>
     <header>
-      <div class="container">
       <h1>Comenzando con la fotografia</h1>
-      <ul>
-        <li><a href="#" class="current">Retratos</a></li>
-        <li><a href="#" class="current">Paisajes</a></li>
-        <li><a href="#" class="current">Inicio</a></li>
-      </ul>
-      </div>
+      <nav>
+        <a id="inicio" href="#" class="current">Inicio</a>
+        <a href="#" class="current">Paisajes</a>
+        <a href="#" class="current">Retratos</a>
+      </nav>
     </header>
-
+        <div id="img1">
+          <img class="img-size"src="media/img/imagen1.jpg" alt="Imagen 1">
+        </div>
+        <div class="cont2">
+        <div id="img2">
+          <img class="img-size" src="media/img/imagen2.jpg" alt="Imagen 2">
+          <a href="#">Paisajes</a>
+        </div>
+        <div id="img3">
+        <img class="img-size" src="media/img/imagen3.jpg">
+        <a href="#">Retratos</a>
+      </div>
+    </div>
+    <footer>
+      <div class="cont3">
+        <div>
+          <h3>Contacto</h3>
+          <a href="#">comenzandoconlafotografia.com</a>
+          <p>Calle 5 con X</p>
+          <p>Telefono 123123123123</p>
+        </div>
+        <div>
+          <h3>Terminos</h3>
+          <a href="#">Conoce nuestros terminos y condiciones...</a>
+        </div>
+        <div>
+          <h3>Redes Sociales</h3>
+          <p>Comparte nuestras redes:</p>
+          <a href="#" class="icon-facebook">Comenzando Fotografia</a><br>
+          <a href="#" class="icon-instagram">ComenzandoFotografia</a><br>
+          <a href="#"class="icon-twitter">@ComenzandoFotografia</a>
+        </div>
+        <div>
+          <p><em>Powered by: Angelo Mauro Diez.</p><em>
+          <p>&copy; All Rights Reserved 2019.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

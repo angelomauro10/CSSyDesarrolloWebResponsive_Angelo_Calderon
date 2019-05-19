@@ -6,39 +6,151 @@
   box-sizing: border-box;
 }
 
+body
+{
+  font-family: 'Sofia', cursive;
+}
+
 header h1
 {
   float: left;
   margin-top: 9px;
   text-shadow: 2px;
-  text-align: center;
   color: white;
   top: 0;
-  position: absolute;
-
+  text-align: center;
+  padding: 25px;
+  text-shadow: 2px 2px 2px black;
+  border-top: 10px;
 }
 
-.container{
-  background-color: #5b7989;
-}
-
-ul{
-  list-style: none;
-  margin-top: 20px;
-}
-
- ul li a
+nav
 {
-  font-size: 125%;
-  display: flex;
-  flex-flow: wrap-reverse;
-  justify-content: center;
-  padding: 10px;
-  text-decoration: none;
-  color: white;
+  background-color: #5b7989;
+  text-align: center;
+  padding: 35px;
 
+}
+
+#inicio{
+  text-decoration: none;
+}
+
+a
+{
+  padding: 2.5px;
+  color:#fff;
+  font-style: italic;
 }
 
 .current:active{
-  color: Blue;
+  color: blue;
+  text-decoration: none;
+}
+
+#img1{
+  padding: 22px;
+  background-color: #82c3a6;
+  text-align: center;
+  width: 100%;
+}
+
+#img1 img{
+  width: 100%;
+  box-shadow: 2px 2px 2px #02010a;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+@media (min-width:720px){
+
+    #img1 img{
+      height: 500px;
+      width: 80%;
+    }
+
+    #img2,#img3 img{
+      height: 300px;
+      width: 50%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .cont2 img{
+      height: 300px;
+      width: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+}
+
+.cont2 img{
+  width: 100%;
+  border: solid 2px;
+  box-shadow: 2px 2px 2px #02010a;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#img2{
+  padding: 20px;
+  background-color: #d5c75f;
+  text-align: center;
+}
+
+#img2 img:hover{
+  transform: rotate(10deg);
+  transition-duration: 1s;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+#img2 a{
+  color: black;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#img3{
+  padding: 20px;
+  background-color: #d5c75f;
+  text-align: center;
+}
+
+#img3 img:hover{
+  transform:translate(20px, -5px);
+  transition-duration: 1s;
+  box-shadow: 2px 2px 2px #82c3a6;
+}
+
+#img3 a{
+  color: black;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.cont3{
+  background-color: #c6d5c5;
+  border-bottom: 10px;
+  text-align: left;
+  padding-left: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.cont3 div{
+  padding: 10px;
+  margin: 13px;
+}
+
+.cont3 div p{
+  padding: 5px;
+}
+
+.cont3 div a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
 }
