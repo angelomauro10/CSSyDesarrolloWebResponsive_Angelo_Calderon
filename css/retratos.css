@@ -1,0 +1,155 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body
+{
+  font-family: 'Dancing Script', cursive;
+}
+
+.header{
+  background-color: #5b7989;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+}
+
+nav
+{
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  margin-top: 1.5%;
+}
+.nav h1{
+  color: white;
+}
+
+#TITLE{
+  text-shadow: 2px 2px 2px black;
+}
+
+#retratos{
+  text-decoration: none;
+}
+
+.nav{
+  padding: 10px;
+}
+
+.nav a{
+    color: white;
+}
+
+.current:active{
+  color: white;
+  text-decoration: none;
+}
+
+.cont2{
+  background-color: #d5c75f;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px;
+}
+
+.cont2 img{
+  width: 100%;
+  padding: 2.5px;
+}
+
+@media (max-width: 700px){
+
+  .header{
+    height: 200px;
+    text-align: center;
+  }
+  nav{
+    margin-left: 20.5%;
+  }
+}
+
+@media (min-width: 700px){
+
+    .header{
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1.2em;
+      padding-right: 40px;
+      vertical-align: middle;
+    }
+
+    #TITLE{
+      text-shadow: 2px 2px 2px black;
+    }
+
+    .nav{
+      vertical-align: middle;
+    }
+
+    .cont3{
+      justify-content: center;
+    }
+  }
+
+  #img1{
+    filter: blur(10px);
+  }
+
+  #img3{
+    filter: sepia(90%);
+  }
+
+  #img2, #img4, #img6{
+    filter: grayscale(100%);
+  }
+
+  .cont2{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+  }
+
+  .cont2 div{
+    flex: auto;
+    width: 330px;
+    margin: .5vw
+  }
+ .cont2 div img{
+   width: 100%;
+   height: auto;
+ }
+
+  .cont3{
+    background-color: #c6d5c5;
+    border-bottom: 10px;
+    text-align: left;
+    padding-left: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: justify;
+  }
+
+  .cont3 div{
+    padding: 10px;
+    margin: 13px;
+  }
+
+  .cont3 div p{
+    padding: 5px;
+  }
+
+  .cont3 div a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+}
