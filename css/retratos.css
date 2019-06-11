@@ -19,6 +19,55 @@ body
   height: 100px;
 }
 
+#rebote {
+-webkit-animation: 1s;
+-moz-animation: 1s;
+animation-name: rebote;
+animation-duration: 1s;
+}
+
+@keyframes rebote {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0% ;
+  }
+}
+
+@-webkit-keyframes rebote {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0% ;
+  }
+}
+
+@-moz-keyframes rebote {
+  0% {
+    margin-top: 150%;
+  }
+
+  60% {
+    margin-top: -5%;
+  }
+
+  100% {
+    margin-top: 0% ;
+  }
+}
+
 nav
 {
   display: flex;
@@ -26,6 +75,7 @@ nav
   color: white;
   margin-top: 1.5%;
 }
+
 .nav h1{
   color: white;
 }
@@ -64,18 +114,69 @@ nav
   padding: 2.5px;
 }
 
-@media (max-width: 700px){
+@media (max-width: 900px) {
 
   .header{
     height: 200px;
     text-align: center;
   }
+
   nav{
     margin-left: 20.5%;
   }
+
+  #rebote {
+  -webkit-animation: 1s;
+  -moz-animation: 1s;
+  animation-name: rebote;
+  animation-duration: 1s;
+  }
+
+  @keyframes rebote {
+    0% {
+      margin-top: 250%;
+    }
+
+    60% {
+      margin-top: -5%;
+    }
+
+    100% {
+      margin-top: 0% ;
+    }
+  }
+
+  @-webkit-keyframes rebote {
+    0% {
+      margin-top: 250%;
+    }
+
+    60% {
+      margin-top: -5%;
+    }
+
+    100% {
+      margin-top: 0% ;
+    }
+  }
+
+  @-moz-keyframes rebote {
+    0% {
+      margin-top: 250%;
+    }
+
+    60% {
+      margin-top: -5%;
+    }
+
+    100% {
+      margin-top: 0% ;
+    }
+  }
+
 }
 
-@media (min-width: 700px){
+@media (min-width: 900px){
 
     .header{
       display: flex;
